@@ -9,7 +9,6 @@ This project covers the concept of Python modules and how to import and use them
 3. [Project Tasks](#project-tasks)
 4. [Files and Directories](#files-and-directories)
 5. [Usage](#usage)
-6. [Authors](#authors)
 
 ## Description
 
