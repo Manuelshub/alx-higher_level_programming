@@ -46,6 +46,4 @@ To run any of the scripts, use the following command in the terminal:
 ```bash
 python3 script_name.py
 
-## Author
 
-Emmanuel Ifediora
