@@ -10,3 +10,4 @@ This repository contains projects and exercises related to higher-level programm
 - [0x03-python-data_structures](./0x03-python-data_structures): Introduction to data structures in Python.
 - [0x04-python-more_data_structures](./0x04-python-more_data_structures): More on data Structures in python.
 - [0x05-python-exceptions](./0x05-python-exceptions): Introduction to Errors and Exceptions in python.
+- [0x06-python-classes](./0x06-python-classes): Introduction to Object Oriented Programming.
