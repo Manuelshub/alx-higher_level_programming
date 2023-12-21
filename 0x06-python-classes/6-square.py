@@ -55,7 +55,11 @@ class Square:
         It checks if the position is a tuple of two positive integers.
         If it's not it raises an exception.
         """
-        if not isinstance(value, tuple) and len(value) != 2:
+        is_tuple = isinstance(value, tuple)
+        correct_length = len(value) == 2
+        positive_ints = all(isinstance(i, int) and i >= 0 for i in value)
+
+        if not (is_tuple and correct_length and positive_ints):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
