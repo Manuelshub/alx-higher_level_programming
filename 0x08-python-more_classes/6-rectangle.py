@@ -6,6 +6,7 @@ A class that defines a Rectangle.
 
 class Rectangle:
 
+    """ A public class attribute, initialized to 0"""
     number_of_instances = 0
 
     """
@@ -22,6 +23,7 @@ class Rectangle:
         self.width = width
         self.height = height
 
+        """ Incremented during each new instance instantiation"""
         Rectangle.number_of_instances += 1
 
     @property
@@ -96,4 +98,5 @@ class Rectangle:
         """
         print("Bye rectangle...")
 
+        """ Decremented during each instance deletion"""
         Rectangle.number_of_instances -= 1
