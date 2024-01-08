@@ -24,11 +24,11 @@ TypeError: b must be an integer
 10000010
 
 >>> add_integer(float('inf'))
-Traceback (most recent call back):
+Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
 >>> add_integer(10, float('inf'))
-Traceback (most recent call back):
+Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
 >>> add_integer(float('nan'))
