@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import json
 """
 A Function that creates an Object from a JSON file
 """
+import json
 
 
 def load_from_json_file(filename):
@@ -12,5 +12,5 @@ def load_from_json_file(filename):
     """
     with open(filename, 'r') as myfile:
         for line in myfile:
-            myobj = json.loads(line)
+            myobj = json.load(line)
     return myobj
