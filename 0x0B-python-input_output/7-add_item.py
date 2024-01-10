@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import sys
-import json
 """
 A Script that adds all arguments to a python list and save them to a file
 """
+import json
+import sys
 
 
 if __name__ == "__main__":
