@@ -29,6 +29,7 @@ def class_to_json(obj):
         }
 
         for key in dir(obj):
-            if not key.startswith('_') and key not in['__str__']:
-                result_dict['attributes'][key] = class_to_json(getattr(obj, key))
+            if not key.startswith('_') and key not in ['__str__']:
+                result_dict['attributes'][key] =\
+                    class_to_json(getattr(obj, key))
         return result_dict
