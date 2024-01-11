@@ -1,0 +1,27 @@
+Test cases for 5-text_indentation.py
+====================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Testing with an integer
+=======================
+
+>>> text_indentation(10987)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+Testingthe function with a list
+===============================
+
+>>> text_indentation(["character", 2356, 87.3])
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation("This is just a text. Im using it just to test my function? but it'll later be deleted.")
+This is just a text.
+<BLANKLINE>
+Im using it just to test my function?
+<BLANKLINE>
+but it'll later be deleted.
+<BLANKLINE>
+<BLANKLINE>
