@@ -38,3 +38,10 @@ Testing the function with a float that is less than 0
 >>> print_square(-9.87)
 Traceback (most recent call last):
 TypeError: size must be an integer
+
+Testing when an argument is missing
+===================================
+
+>>> print_square()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
