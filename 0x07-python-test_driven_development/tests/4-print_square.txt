@@ -1,0 +1,40 @@
+Test case or 4-print_square.py
+==============================
+
+>>> print_square = __import__('4-print_square').print_square
+
+Testing the function with a string
+==================================
+
+>>> print_square("not an integer")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+Testing with an integer
+=======================
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+Testing the function with a number lesser than 0
+================================================
+
+>>> print_square(-10)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+Testing the function with a float that is less than 0
+=====================================================
+
+>>> print_square(-9.87)
+Traceback (most recent call last):
+TypeError: size must be an integer
