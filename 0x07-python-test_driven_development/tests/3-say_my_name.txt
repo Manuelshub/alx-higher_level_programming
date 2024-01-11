@@ -1,0 +1,28 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Testing the Function with two normal strings
+============================================
+
+>>> say_my_name("Emmanuel", "Ifediora")
+My name is Emmanuel Ifediora
+
+Testing the function with the first name as a float
+===================================================
+
+>>> say_my_name(123.00, "Manuel")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+Testing the function by passing the string to variables and passing the variables to the function
+=======================================================================
+
+>>> first_name = "Emmanuel"
+>>> last_name = "Ifediora"
+>>> say_my_name(first_name, last_name)
+My name is Emmanuel Ifediora
+
+Testing the function with just one string
+=========================================
+
+>>> say_my_name("Emmanuel")
+My name is Emmanuel 
