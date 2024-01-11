@@ -23,6 +23,6 @@ Test cases for 1-my_list.py
 ['d', 'c', 'b', 'a']
 >>> my_list.print_sorted()
 ['a', 'b', 'c', 'd']
->>> my_list = MyList()
->>> my_list.print_sorted()
+>>> new_list = MyList()
+>>> new_list.print_sorted()
 []
