@@ -72,7 +72,7 @@ class Rectangle(Base):
         This is x setter
         sets the value of __x with value
         """
-        self.__x = x
+        self.__x = value
 
     @property
     def y(self):
