@@ -132,3 +132,26 @@ class Rectangle(Base):
         height = self.height
         width = self.width
         return f"[{clss_name}] ({Id}) {self.x}/{self.y} - {width}/{height}"
+
+    def update(self, *args):
+        """
+        This method updates the attributes in this class
+        id(int): the id attribute
+        width(int): the width atribute
+        height(int): the height attribute
+        x(int): attribute x
+        y(int): attribute y
+        """
+        i = 0
+        for arg in args:
+            if i == 0:
+                super().__init__(arg)
+            elif i == 1:
+                self.width = arg
+            elif i == 2:
+                self.height = arg
+            elif i == 3:
+                self.x = arg
+            elif i == 4:
+                self.y = arg
+            i += 1
