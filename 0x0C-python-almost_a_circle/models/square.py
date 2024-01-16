@@ -24,3 +24,23 @@ class Square(Rectangle):
         width = self.width
 
         return f"[{clss_name}] ({self.id}) {self.x}/{self.y} - {width}"
+
+    @property
+    def size(self):
+        """
+        The size getter
+        Returns the value of the attribute size
+        """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+        This is the size setter
+        It sets the value of size with value
+        """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.width = value
