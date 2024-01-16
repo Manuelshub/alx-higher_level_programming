@@ -11,7 +11,7 @@ class Base:
     def __init__(self, id=None):
         """ Initializes the class base
         id: (int) the id of the class
-        """    
+        """
         if id is not None:
             self.id = id
         else:
