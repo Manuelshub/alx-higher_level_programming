@@ -133,25 +133,38 @@ class Rectangle(Base):
         width = self.width
         return f"[{clss_name}] ({Id}) {self.x}/{self.y} - {width}/{height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         This method updates the attributes in this class
+        args: The argument list
+        kwargs: The keyworded argument list
         id(int): the id attribute
         width(int): the width atribute
         height(int): the height attribute
         x(int): attribute x
         y(int): attribute y
         """
-        i = 0
-        for arg in args:
-            if i == 0:
-                super().__init__(arg)
-            elif i == 1:
-                self.width = arg
-            elif i == 2:
-                self.height = arg
-            elif i == 3:
-                self.x = arg
-            elif i == 4:
-                self.y = arg
-            i += 1
+        if args:
+            for i, arg in enumerate(args):
+                if i == 0:
+                    super().__init__(arg)
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    super().__init__(value)
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
