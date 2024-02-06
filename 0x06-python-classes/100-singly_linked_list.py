@@ -84,7 +84,6 @@ class SinglyLinkedList:
             return
 
         current = self.__head
-        prev = None
 
         while current and current.data < value:
             prev = current
