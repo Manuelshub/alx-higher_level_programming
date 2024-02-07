@@ -3,6 +3,7 @@
 A class that defines a square.
 """
 
+
 class Square:
     """
     This class defines a square.
@@ -43,8 +44,10 @@ class Square:
         """
         This sets the position(the private instance attribute) to value.
         """
-        if type(value) is not tuple and len(value) != 2 and (type(position[0]) is not int and type(position[1])
-            is not int):
+        if (type(value) is not tuple and
+            len(value) != 2 and
+            (type(position[0]) is not int and
+             type(position[1]) is not int)):
             raise TypeError('position must be a tuple of 2 positive integer')
         self.__position = value
 
@@ -78,6 +81,7 @@ class Square:
         square_str = ""
         if self.__size == 0:
             square_str += '\n'
+            return square_str
         else:
             for h in range(self.__position[1]):
                 square_str += '\n'
