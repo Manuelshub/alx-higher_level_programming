@@ -6,11 +6,12 @@ import math
 class MagicClass:
     """Represents a circle"""
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """Initializes an instance of the circle.
         Args:
             radius: the radius of the circle.
         """
+
         if type(radius) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
         self.__radius = radius
