@@ -49,7 +49,15 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_large_ints(self):
         """Testing the function with large positive integers"""
-        self.assertEqual(max_integer([100000, 190000]), 190000)
+        self.assertEqual(max_integer([100000, 190000, 15000]), 190000)
+
+    def test_large_negative_ints(self):
+        """Testing the function with large negative integers"""
+        self.assertEqual(max_integer([-123000, -110000, 90000]), 90000)
+
+    def test_mixed_positive_negative_ints(self):
+        """Testing the function with large signed integers."""
+        self.assertEqual(max_integer([-120000, 100000, -1000000]), 100000)
 
 
 if __name__ == "__main__":
