@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import math
 """A class that defines a Circle."""
+import math
 
 
 class MagicClass:
