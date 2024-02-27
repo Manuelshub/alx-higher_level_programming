@@ -38,7 +38,7 @@ class Base:
         filename = f"{subcls_name}.json"
 
         if list_objs is None:
-            list_objs = []
+            json_string = "[]"
         else:
             list_dicts = [dct.to_dictionary() for dct in list_objs]
             json_string = cls.to_json_string(list_dicts)
