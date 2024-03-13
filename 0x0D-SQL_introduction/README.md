@@ -18,3 +18,5 @@ To run the SQL queries, you need:
 3. 2-remove_database.sql: SQL script that deletes a database in my MySQL server
 
 4. 3-list_tables.sql: SQL script that lists all tables in a database.
+
+5. 4-first_table.sql: SQL script that creates a table in the current database in your MySQL server.
