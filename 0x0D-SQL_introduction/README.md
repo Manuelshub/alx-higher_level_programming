@@ -12,3 +12,4 @@ To run the SQL queries, you need:
 ## Files
 
 1. 0-list_database.sql: SQL script that lists all databases of your MySQL server.
+2. 1-create_database_if_missing.sql: SQL script that creates a database hbtn_0c_0 in my MySQL server.
