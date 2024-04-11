@@ -12,7 +12,9 @@ for (let i = 2; i < args.length; i++) {
   if (numbers[i] > max) {
     secondMax = max;
     max = numbers[i];
-  } else if (numbers[i] > max && numbers[i] !== max) {
+  } else if (numbers[i] > secondMax && numbers[i] !== max) {
+    secondMax = numbers[i];
+  } else if (max === secondMax && secondMax !== numbers[i]) {
     secondMax = numbers[i];
   }
 }
