@@ -16,4 +16,7 @@ for (let i = 0; i < args.length; i++) {
     secondMax = numbers[i];
   }
 }
+if (secondMax === -Infinity) {
+	console.log('0');
+}
 console.log(secondMax);
