@@ -6,17 +6,14 @@ if (args.length < 2) {
 }
 
 const numbers = args.map(Number);
-let max = -Infinity;
-let secondMax = -Infinity;
-for (let i = 0; i < args.length; i++) {
+let max = Math.max(numbers[0], numbers[1]);
+let secondMax = Math.min(numbers[0], numbers[1]);
+for (let i = 2; i < args.length; i++) {
   if (numbers[i] > max) {
     secondMax = max;
     max = numbers[i];
   } else if (numbers[i] > max && numbers[i] !== max) {
     secondMax = numbers[i];
   }
-}
-if (secondMax === -Infinity) {
-	console.log('0');
 }
 console.log(secondMax);
