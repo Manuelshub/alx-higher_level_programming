@@ -5,8 +5,9 @@
 if __name__ == '__main__':
     import urllib.request
 
-    req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
-    with urllib.request.urlopen(req) as hbtn_page:
+    url = 'https://alx-intranet.hbtn.io/status'
+
+    with urllib.request.urlopen(url) as hbtn_page:
         page = hbtn_page.read()
         page_fmt = page.decode('utf-8')
 
