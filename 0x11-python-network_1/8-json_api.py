@@ -9,10 +9,10 @@ import sys
 
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
-    if sys.argv[1][0].isalpha():
-        data = {'q': sys.argv[1]}
-    else:
+    if len(sys.argv) == 1:
         data = {'q': ""}
+    else:
+        data = {'q': sys.argv[1]}
     req = requests.post(url, data=data)
 
     try:
