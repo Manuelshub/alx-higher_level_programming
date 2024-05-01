@@ -15,7 +15,11 @@ if __name__ == "__main__":
     response = requests.get(url)
     datas = response.json()
 
+    count = 0
     for data in datas:
+        if count == 10:
+            break
         sha = data.get('sha')
         committer = data['commit']['author'].get('name')
         print(f"{sha}: {committer}")
+        count += 1
