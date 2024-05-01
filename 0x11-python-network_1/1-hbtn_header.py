@@ -10,5 +10,4 @@ if __name__ == '__main__':
     req = urllib.request.Request(sys.argv[1])
     with urllib.request.urlopen(req) as response:
         hbtn_body = dict(response.headers)
-        print(hbtn_body['X-Request-Id'])
-
+        print(hbtn_body.get('X-Request-Id'))
