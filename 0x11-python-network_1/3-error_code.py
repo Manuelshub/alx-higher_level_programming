@@ -11,6 +11,8 @@ if __name__ == '__main__':
     url = argv[1]
     req = Request(url)
     try:
-        urlopen(req)
+        with urlopen(req) as respose:
+            hbtn_read = response.read()
+            print(hbtn_read.decode('utf-8'))
     except HTTPError as e:
-        print(e.read().decode('utf-8'))
+        print(e.read())
