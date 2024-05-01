@@ -17,5 +17,5 @@ if __name__ == "__main__":
 
     for data in datas:
         sha = data.get('sha')
-        committer = data['commit']['committer'].get('name')
+        committer = data['commit']['author'].get('name')
         print(f"{sha}: {committer}")
