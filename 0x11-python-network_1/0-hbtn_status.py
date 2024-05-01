@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """ Script that fetches 'https://alx-intranet.hbtn.io/status' """
+import urllib.request
 
 
 if __name__ == '__main__':
-    import urllib.request
-
     req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
     with urllib.request.urlopen(req) as hbtn_page:
         page = hbtn_page.read()
