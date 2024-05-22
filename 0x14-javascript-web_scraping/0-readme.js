@@ -5,10 +5,10 @@ const fs = require('fs');
 // filename
 const filename = process.argv[2];
 
-fs.readFile(filename, 'utf-8', (data, err) => {
+fs.readFile(filename, 'utf-8', (err, data) => {
   if (err) {
     console.error(err);
-    process.exit(1);
+    return;
   }
   console.log(data);
 });
