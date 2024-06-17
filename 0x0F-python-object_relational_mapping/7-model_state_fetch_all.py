@@ -11,7 +11,7 @@ if __name__ == "__main__":
     from sqlalchemy.orm import sessionmaker
     # Creating engine
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
-                           .format(argv[1], argv[2], argv[3])
+                           .format(argv[1], argv[2], argv[3]),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
     # Creating session
