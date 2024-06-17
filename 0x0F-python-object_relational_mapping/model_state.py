@@ -10,9 +10,12 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class State(Base):
+    """
+    State class for creating a table in MySQL database
+    """
     __tablename__ = "states"
 
     id = Column("id", Integer, primary_key=True, autoincrement=True, unique=True)
     name = Column("name", String(128), nullable=False)
 
-    
+
